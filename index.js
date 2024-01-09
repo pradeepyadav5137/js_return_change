@@ -18,6 +18,8 @@ function check() {
     let fiveHundreads = Math.floor(remainingAomunt / 500);
     remainingAomunt = remainingAomunt %= 500;
     console.log(remainingAomunt)
+    let twoHundreads = Math.floor(remainingAomunt / 200);
+    remainingAomunt = remainingAomunt %= 200;
 
     let hundreads = Math.floor(remainingAomunt / 100);
     remainingAomunt = remainingAomunt %= 100;
@@ -41,35 +43,39 @@ function check() {
         case 0: break;
         default: output[1].innerHTML = fiveHundreads
     }
+    switch (twoHundreads) {
+        case 0: break;
+        default: output[2].innerHTML = twoHundreads
+    }
 
     switch (hundreads) {
         case 0: break;
-        default: output[2].innerHTML = hundreads
+        default: output[3].innerHTML = hundreads
     }
 
     switch (fifties) {
         case 0: break;
-        default: output[3].innerHTML = fifties
+        default: output[4].innerHTML = fifties
     }
 
     switch (twenties) {
         case 0: break;
-        default: output[4].innerHTML = twenties
+        default: output[5].innerHTML = twenties
     }
 
     switch (tens) {
         case 0: break;
-        default: output[5].innerHTML = tens
+        default: output[6].innerHTML = tens
     }
 
     switch (fives) {
         case 0: break;
-        default: output[6].innerHTML = fives
+        default: output[7].innerHTML = fives
     }
 
     switch (ones) {
         case 0: break;
-        default: output[7].innerHTML = ones
+        default: output[8].innerHTML = ones
     }
 
 }
