@@ -1,0 +1,122 @@
+body{
+    background-color: antiquewhite;
+}
+
+.body, table{
+    margin: auto;
+    text-align: center;
+}
+
+.body h1{
+    font-size: 2.5rem;
+    color: #014076;
+}
+
+.body p{
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    color: #034a2c;
+
+}
+.container{
+    height: auto;
+    width: 30%;
+    margin: auto;
+    background-color: #014076;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem white;
+    color: white;
+}
+
+.container h2{
+    color: rgb(251 0 117);;
+    font-size: 1.8rem;
+}
+
+.cash{
+    margin-top: 1.5rem;
+    /* display: none; */
+}
+
+input{
+    font-weight: bold;
+    font-size: 1.5rem;
+   width: 60%;
+   margin: auto;
+   height: 1.5rem;
+   border-radius: 0.5rem;
+   box-shadow: 0.2rem 0.2rem 0.2rem #00294c;
+
+
+}
+
+.container h3{
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+}
+
+button{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem  0.2rem 0.2rem #00294c ;
+}
+
+table ,th,td{
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+    /* word-wrap: break-word;  */
+    width: 80%;
+
+}
+
+table th{
+    color:rgb(251 0 117);;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+
+    table {
+        width: 70%;
+    }
+
+    table th, table td {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .container {
+        width: 80%;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    table th, table td {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
