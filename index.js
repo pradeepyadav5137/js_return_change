@@ -84,4 +84,16 @@ function check() {
 
 }
 
+function clearField(){
+    document.querySelectorAll("input")[0].value=""
+    document.querySelectorAll("input")[1].value=""
+    
+for( let i=1 ; i<=8; i++){
+    output[i].innerHTML= ""
+}
+showalert.innerHTML=""
+
+
+}
+
 
