@@ -74,6 +74,10 @@ table ,th,td{
     width: 80%;
 
 }
+p.alert {
+    color: red;
+    
+}
 
 table th{
     color:rgb(251 0 117);;
@@ -96,6 +100,8 @@ table th{
         font-size: 1rem;
     }
 }
+
+
 
 
 @media screen and (max-width: 786px) {

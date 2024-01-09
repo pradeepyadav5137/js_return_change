@@ -2,6 +2,7 @@ let billAmount;
 let cashAmount;
 let remainingAomunt;
 output = document.querySelectorAll("table th")
+showalert = document.querySelector(".alert")
 
 function check() {
 
@@ -11,10 +12,12 @@ function check() {
     cashAmount = cash.value
 
     remainingAomunt = cashAmount - billAmount;
-    console.log(remainingAomunt);
 
-
-
+    if (remainingAomunt < 0){
+        showalert.innerHTML= "Cash amount should be greater than bill amount" 
+    }
+    else
+   {
     let fiveHundreads = Math.floor(remainingAomunt / 500);
     remainingAomunt = remainingAomunt %= 500;
     console.log(remainingAomunt)
@@ -77,6 +80,7 @@ function check() {
         case 0: break;
         default: output[8].innerHTML = ones
     }
+}
 
 }
 
